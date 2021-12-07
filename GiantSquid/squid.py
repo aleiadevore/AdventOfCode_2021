@@ -33,6 +33,13 @@ def makeBoards(vals):
     return boards
 
 
+def callNumbers(nums, boards):
+    """Iterates through list of numbers and marks off on 
+    each board in list boards. Checks each board for win
+    and calls function if board wins"""
+    pass
+
+
 def setUp():
     """Input format:
     First line is numbers to be called
@@ -46,9 +53,16 @@ def setUp():
         out.pop(0)
         boards = makeBoards(out)
 
-    for board in boards:
-        # checkBoard(board)
-        print(board)
+    # Edit bingo numbers to clean list
+    nums = numbers.split(' ')
+    newNums = []
+    for num in nums:
+        try:
+            newNums.append(int(num))
+        except:
+            continue
+
+    callNumbers(nums, boards)
 
 if __name__ == "__main__":
     setUp()
