@@ -3,9 +3,11 @@
 Score of winning board calculated by finding sum of all unmarked
 multiplied by the winning number"""
 
+
 def checkBoard(board):
     """Checks board for win"""
     pass
+
 
 def makeBoards(vals):
     """Takes list of strings representing boards, converts into
@@ -45,7 +47,7 @@ def setUp():
         boards = makeBoards(out)
 
     for board in boards:
-        #checkBoard(board)
+        # checkBoard(board)
         print(board)
 
 if __name__ == "__main__":
